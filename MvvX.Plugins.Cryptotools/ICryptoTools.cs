@@ -1,5 +1,4 @@
-﻿
-namespace MvvX.Plugins.CryptoTools
+﻿namespace MvvX.Plugins.CryptoTools
 {
 	public interface ICryptoTools
 	{

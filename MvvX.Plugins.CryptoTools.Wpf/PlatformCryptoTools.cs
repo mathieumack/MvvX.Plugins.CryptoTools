@@ -13,7 +13,7 @@ namespace MvvX.Plugins.CryptoTools.Platform
             if (!File.Exists(filePath))
                 throw new FileNotFoundException();
 
-            switch(hashType)
+            switch (hashType)
             {
                 case HashType.MD5:
                     return GetMD5Checksum(filePath);
