@@ -29,11 +29,11 @@
         <file src="..\MvvX.Plugins.CryptoTools.Wpf\bin\Release\MvvX.Plugins.CryptoTools.Wpf.dll" target="lib\net45" />
         <file src="BootstrapContent\CryptoToolsPluginBootstrap.cs.pp" target="content\net45\Bootstrap\CryptoToolsPluginBootstrap.cs.pp" />
         
-        <!-- UWP -->
+        <!-- UWP
         <file src="..\MvvX.Plugins.CryptoTools\bin\Release\MvvX.Plugins.CryptoTools.XML" target="lib\UAP10" />
         <file src="..\MvvX.Plugins.CryptoTools\bin\Release\MvvX.Plugins.CryptoTools.dll" target="lib\UAP10" />        
         <file src="..\MvvX.Plugins.CryptoTools.WindowsUWP\bin\Release\MvvX.Plugins.CryptoTools.WindowsUWP.dll" target="lib\UAP10" />
-        <file src="BootstrapContent\CryptoToolsPluginBootstrap.cs.pp" target="content\UAP10\Bootstrap\CryptoToolsPluginBootstrap.cs.pp" />
+        <file src="BootstrapContent\CryptoToolsPluginBootstrap.cs.pp" target="content\UAP10\Bootstrap\CryptoToolsPluginBootstrap.cs.pp" /> -->
         
         <!-- Android -->
         <file src="..\MvvX.Plugins.CryptoTools\bin\Release\MvvX.Plugins.CryptoTools.XML" target="lib\monoandroid60" />
