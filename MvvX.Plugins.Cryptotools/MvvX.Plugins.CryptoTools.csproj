@@ -37,6 +37,7 @@
     <DocumentationFile>bin\Release\MvvX.Plugins.CryptoTools.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SymetricAlgorithmType.cs" />
     <Compile Include="HashType.cs" />
     <Compile Include="ICryptoTools.cs" />
     <Compile Include="PluginLoader.cs" />
