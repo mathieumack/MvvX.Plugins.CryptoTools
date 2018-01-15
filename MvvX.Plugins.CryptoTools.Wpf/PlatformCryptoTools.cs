@@ -61,6 +61,49 @@ namespace MvvX.Plugins.CryptoTools.Platform
 
         #endregion
 
+        #region Compute HASH
+
+        public string ComputeHash(string content, HashType hashType)
+        {
+            if (string.IsNullOrWhiteSpace(content))
+                throw new ArgumentNullException();
+
+            switch (hashType)
+            {
+                case HashType.MD5:
+                    return GetMD5Hash(content);
+                case HashType.SHA256:
+                    return GetSHA256Hash(content);
+                case HashType.SHA512:
+                    return GetSHA512Hash(content);
+                default:
+                    return string.Empty;
+            }
+        }
+
+        internal string GetSHA256Hash(string file)
+        {
+            var sha = new SHA256Managed();
+            byte[] checksum = sha.ComputeHash(Encoding.UTF8.GetBytes(file.ToLowerInvariant()));
+            return BitConverter.ToString(checksum).Replace("-", String.Empty);
+        }
+
+        internal string GetSHA512Hash(string file)
+        {
+            var sha = new SHA512Managed();
+            byte[] checksum = sha.ComputeHash(Encoding.UTF8.GetBytes(file.ToLowerInvariant()));
+            return BitConverter.ToString(checksum).Replace("-", String.Empty);
+        }
+
+        internal string GetMD5Hash(string file)
+        {
+            var sha = new MD5CryptoServiceProvider();
+            byte[] checksum = sha.ComputeHash(Encoding.UTF8.GetBytes(file.ToLowerInvariant()));
+            return BitConverter.ToString(checksum).Replace("-", String.Empty);
+        }
+
+        #endregion
+
         #region Encrypt / Decrypt Symetric
 
         public byte[] EncryptWithSymetric(string text, byte[] key, byte[] iv, SymetricAlgorithmType encryptionType)
