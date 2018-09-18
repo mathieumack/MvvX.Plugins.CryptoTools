@@ -1,15 +1,13 @@
-﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MvvX.Plugins.CryptoTools.Wpf.UnitTests
+namespace MvvX.Plugins.CryptoTools.Platform.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class FileCheckSumTests
     {
         [TestMethod]
         public void TestMethod1()
         {
-            // TODO : Implement tests
         }
     }
 }

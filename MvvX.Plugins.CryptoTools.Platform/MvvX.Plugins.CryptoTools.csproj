@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>MACK Mathieu</Authors>
+    <Product />
+    <PackageProjectUrl>https://github.com/mathieumack/MvvX.Plugins.CryptoTools</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/mathieumack/MvvX.Plugins.CryptoTools/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright 2018 MACK Mathieu</Copyright>
+    <PackageTags>mvvmcross crypto</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmCross" Version="6.2.0" />
+  </ItemGroup>
+
+</Project>

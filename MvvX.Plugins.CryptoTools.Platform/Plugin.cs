@@ -1,14 +1,14 @@
-﻿//using MvvmCross.Platform;
-//using MvvmCross.Platform.Plugins;
-//using MvvX.Plugins.CryptoTools.Platform;
+﻿using MvvmCross;
+using MvvmCross.Plugin;
 
-//namespace MvvX.Plugins.CryptoTools.Platform
-//{
-//    public class Plugin : IMvxPlugin
-//    {
-//        public void Load()
-//        {
-//            Mvx.RegisterSingleton<ICryptoTools>(new PlatformCryptoTools());
-//        }
-//    }
-//}
+namespace MvvX.Plugins.CryptoTools
+{
+    [MvxPlugin]
+    public class Plugin : IMvxPlugin
+    {
+        public void Load()
+        {
+            Mvx.IoCProvider.RegisterSingleton<ICryptoTools>(new PlatformCryptoTools());
+        }
+    }
+}

@@ -3,21 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{431B3EE6-93DD-48E4-A6D3-7A3B5D48947D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{0F5E09A9-1DEC-4BBF-8068-A07DCFC68F1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6BC072E-5C65-4D21-B133-313096A2BB7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.CryptoTools", "MvvX.Plugins.CryptoTools\MvvX.Plugins.CryptoTools.csproj", "{67F9D3A8-F71E-4428-913F-C37AE82CDB24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvvX.Plugins.CryptoTools", "MvvX.Plugins.CryptoTools.Platform\MvvX.Plugins.CryptoTools.csproj", "{CDB5476B-8C5A-45D2-941D-73FFE7B50369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.CryptoTools.Wpf", "MvvX.Plugins.CryptoTools.Wpf\MvvX.Plugins.CryptoTools.Wpf.csproj", "{8D4FA562-E6B8-4222-93BE-CA57126F0A65}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.CryptoTools.Droid", "MvvX.Plugins.CryptoTools.Droid\MvvX.Plugins.CryptoTools.Droid.csproj", "{4F7A1E1B-2330-4228-A74C-43A64D9C9FA3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.CryptoTools.Touch", "MvvX.Plugins.CryptoTools.Touch\MvvX.Plugins.CryptoTools.Touch.csproj", "{BFC7EB64-E616-4199-9A0E-3137C5BAADB3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.CryptoTools.Wpf.UnitTests", "MvvX.Plugins.CryptoTools.Wpf.UnitTests\MvvX.Plugins.CryptoTools.Wpf.UnitTests.csproj", "{DBBA62C2-C5A3-49DD-8EDC-90E4F3A5FB54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.CryptoTools.Tests", "MvvX.Plugins.CryptoTools.Platform.Tests\MvvX.Plugins.CryptoTools.Tests.csproj", "{85FCE7CD-2885-4CCB-8BF6-7C7C86B806A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,36 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67F9D3A8-F71E-4428-913F-C37AE82CDB24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D4FA562-E6B8-4222-93BE-CA57126F0A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D4FA562-E6B8-4222-93BE-CA57126F0A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D4FA562-E6B8-4222-93BE-CA57126F0A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D4FA562-E6B8-4222-93BE-CA57126F0A65}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F7A1E1B-2330-4228-A74C-43A64D9C9FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F7A1E1B-2330-4228-A74C-43A64D9C9FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F7A1E1B-2330-4228-A74C-43A64D9C9FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F7A1E1B-2330-4228-A74C-43A64D9C9FA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFC7EB64-E616-4199-9A0E-3137C5BAADB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFC7EB64-E616-4199-9A0E-3137C5BAADB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFC7EB64-E616-4199-9A0E-3137C5BAADB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFC7EB64-E616-4199-9A0E-3137C5BAADB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBBA62C2-C5A3-49DD-8EDC-90E4F3A5FB54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBBA62C2-C5A3-49DD-8EDC-90E4F3A5FB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBBA62C2-C5A3-49DD-8EDC-90E4F3A5FB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBBA62C2-C5A3-49DD-8EDC-90E4F3A5FB54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB5476B-8C5A-45D2-941D-73FFE7B50369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB5476B-8C5A-45D2-941D-73FFE7B50369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB5476B-8C5A-45D2-941D-73FFE7B50369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB5476B-8C5A-45D2-941D-73FFE7B50369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FCE7CD-2885-4CCB-8BF6-7C7C86B806A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FCE7CD-2885-4CCB-8BF6-7C7C86B806A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FCE7CD-2885-4CCB-8BF6-7C7C86B806A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FCE7CD-2885-4CCB-8BF6-7C7C86B806A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{67F9D3A8-F71E-4428-913F-C37AE82CDB24} = {431B3EE6-93DD-48E4-A6D3-7A3B5D48947D}
-		{8D4FA562-E6B8-4222-93BE-CA57126F0A65} = {0F5E09A9-1DEC-4BBF-8068-A07DCFC68F1A}
-		{4F7A1E1B-2330-4228-A74C-43A64D9C9FA3} = {0F5E09A9-1DEC-4BBF-8068-A07DCFC68F1A}
-		{BFC7EB64-E616-4199-9A0E-3137C5BAADB3} = {0F5E09A9-1DEC-4BBF-8068-A07DCFC68F1A}
-		{DBBA62C2-C5A3-49DD-8EDC-90E4F3A5FB54} = {C6BC072E-5C65-4D21-B133-313096A2BB7B}
+		{CDB5476B-8C5A-45D2-941D-73FFE7B50369} = {0F5E09A9-1DEC-4BBF-8068-A07DCFC68F1A}
+		{85FCE7CD-2885-4CCB-8BF6-7C7C86B806A3} = {C6BC072E-5C65-4D21-B133-313096A2BB7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AC10898-F346-4881-B1A1-D74A3CF3A7FA}
