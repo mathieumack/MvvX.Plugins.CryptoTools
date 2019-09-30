@@ -3,18 +3,18 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace MvvX.Plugins.CryptoTools.Platform
+namespace MvvX.Plugins.CryptoTools
 {
-    public class PlatformCryptoTools : ICryptoTools
+    public class CryptoTools : ICryptoTools
     {
         #region Checksums
 
         public string CalculateFileCheckSum(string filePath, HashType hashType)
         {
             if (string.IsNullOrWhiteSpace(filePath))
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(filePath));
             if (!File.Exists(filePath))
-                throw new FileNotFoundException();
+                throw new FileNotFoundException(nameof(filePath));
 
             switch (hashType)
             {
@@ -66,7 +66,7 @@ namespace MvvX.Plugins.CryptoTools.Platform
         public string ComputeHash(string content, HashType hashType)
         {
             if (string.IsNullOrWhiteSpace(content))
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(content));
 
             switch (hashType)
             {
@@ -186,7 +186,7 @@ namespace MvvX.Plugins.CryptoTools.Platform
 
         #endregion
 
-        #region encrypt / Decrypt Asymetric
+        #region Encrypt / Decrypt Asymetric
         
         /// <summary>
         /// Encrypt a text
